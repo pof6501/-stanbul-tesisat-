@@ -1,549 +1,618 @@
 <!DOCTYPE html>
-<html lang="tr-TR">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Diyarbakır Oto Çekici 7/24 | En Hızlı Yol Yardım & Oto Kurtarma</title>
-    <meta name="description" content="Diyarbakır'ın en iyi oto çekici firması. 7/24 profesyonel yol yardım, oto kurtarma ve vinç hizmeti. Hemen ara, anında gel.">
-    <meta name="keywords" content="Diyarbakır oto çekici, Diyarbakır yol yardım, Diyarbakır oto kurtarma, çekici Diyarbakır, 7/24 çekici, vinç, kurtarma">
-    <meta name="author" content="Diyarbakır Oto Çekici 7/24">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>İstanbul Su Tesisatçısı | Tıkanıklık Açma ve Su Kaçağı Tamiri | 7/24 Hizmet</title>
+    <meta name="description" content="İstanbul'un tüm bölgelerine profesyonel su tesisatçısı hizmeti. Tıkanıklık açma, su kaçağı tamiri, gider açma, musluk tamiri ve acil tesisatçı. 0535 480 3340">
+    <meta name="keywords" content="su tesisatçısı İstanbul, tıkanıklık açma, tesisatçı, gider açma, tuvalet tıkanıklığı, lavabo tıkanıklığı, su kaçağı tamiri, acil tesisatçı, İstanbul tesisat">
+    <meta name="author" content="İstanbul Tesisat Uzmanı">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="Turkish">
-    <meta name="revisit-after" content="1 days">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.diyarbakircekici724.com/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.diyarbakircekici724.com/">
-    <meta property="og:title" content="Diyarbakır Oto Çekici 7/24 - En Hızlı Yol Yardım">
-    <meta property="og:description" content="Diyarbakır'ın en iyi oto çekici firması. 7/24 profesyonel yol yardım, oto kurtarma ve vinç hizmeti.">
-    <meta property="og:image" content="https://www.diyarbakircekici724.com/logo.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.diyarbakircekici724.com/">
-    <meta property="twitter:title" content="Diyarbakır Oto Çekici 7/24 - En Hızlı Yol Yardım">
-    <meta property="twitter:description" content="Diyarbakır'ın en iyi oto çekici firması. 7/24 profesyonel yol yardım, oto kurtarma ve vinç hizmeti.">
-    <meta property="twitter:image" content="https://www.diyarbakircekici724.com/logo.png">
-
-    <!-- Favicon (varsayılan) -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ff6600'>🚛</text></svg>">
-
-    <!-- Font Awesome 6 (ikonlar için) -->
+    <link rel="canonical" href="https://www.istanbultesisatci.com">
+    <!-- Font Awesome 6 (ücretsiz ikonlar) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!-- Google Fonts - modern sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
+            font-family: 'Inter', sans-serif;
             background-color: #f4f7fc;
-            color: #333;
-            line-height: 1.6;
+            color: #1f2a44;
+            line-height: 1.5;
+            scroll-behavior: smooth;
         }
 
-        /* Header / Logo Alanı */
+        /* container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* header */
         .header {
-            background: linear-gradient(145deg, #0b2b3b 0%, #1a4b63 100%);
+            background: linear-gradient(135deg, #0b2b40 0%, #12455f 100%);
             color: white;
-            padding: 1.2rem 2rem;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            border-bottom: 4px solid #ffaa00;
+            flex-wrap: wrap;
+            gap: 16px;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+        .logo h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
-
-        .logo-icon {
-            font-size: 3.5rem;
-            filter: drop-shadow(2px 4px 6px black);
-        }
-
-        .logo-text h1 {
-            font-size: 2rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-shadow: 3px 3px 0 #003347;
-        }
-
-        .logo-text p {
-            font-size: 1.1rem;
-            color: #ffd966;
-            font-weight: 600;
-            margin-top: -5px;
+        .logo p {
+            font-size: 0.85rem;
+            opacity: 0.85;
         }
 
         .contact-info {
-            text-align: right;
+            display: flex;
+            gap: 20px;
+            align-items: center;
         }
 
-        .contact-info .phone-big {
-            font-size: 2.2rem;
+        .phone-header {
+            background: #f5a623;
+            padding: 8px 18px;
+            border-radius: 40px;
             font-weight: 700;
-            color: #ffd966;
-            text-decoration: none;
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: transform 0.2s;
+            color: #1f2a44;
+            transition: 0.2s;
+        }
+        .phone-header i {
+            font-size: 1.2rem;
+        }
+        .phone-header:hover {
+            background: #ffb347;
+            transform: scale(1.02);
         }
 
-        .contact-info .phone-big:hover {
-            transform: scale(1.05);
-            color: white;
-        }
-
-        /* Banner / Hero */
+        /* hero */
         .hero {
-            background: url('https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-            background-blend-mode: overlay;
-            background-color: rgba(0, 40, 60, 0.75);
-            padding: 4rem 2rem;
-            text-align: center;
+            background: linear-gradient(112deg, #eef2f9 0%, #dde5f0 100%);
+            padding: 60px 0 70px;
+            border-bottom: 1px solid #cbd5e1;
+        }
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            justify-content: space-between;
+        }
+        .hero-text {
+            flex: 1.2;
+        }
+        .hero-text .badge {
+            background: #0b2b40;
             color: white;
-            position: relative;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero h2 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            text-shadow: 3px 3px 0 #00000070;
-        }
-
-        .hero p {
-            font-size: 1.6rem;
-            margin-bottom: 2rem;
-            font-weight: 500;
-            background: rgba(0,0,0,0.5);
             display: inline-block;
-            padding: 0.5rem 2rem;
-            border-radius: 50px;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 20px;
         }
-
+        .hero-text h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #0b2b40;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
         .hero-stats {
             display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 25px;
         }
-
-        .stat-item {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(8px);
-            padding: 1rem 2rem;
-            border-radius: 60px;
-            font-size: 1.3rem;
+        .hero-stats div {
             font-weight: 600;
-            border: 1px solid #ffaa00;
         }
-
-        .stat-item i {
-            color: #ffaa00;
-            margin-right: 8px;
+        .hero-stats i {
+            color: #f5a623;
+            margin-right: 6px;
         }
-
-        /* Butonlar */
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 2.5rem 0 1rem;
-            flex-wrap: wrap;
+        .hero-image {
+            flex: 0.9;
+            text-align: center;
         }
-
-        .btn {
-            padding: 1.2rem 2.8rem;
-            border-radius: 60px;
-            font-size: 1.7rem;
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 32px;
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+        }
+        /* butonlar */
+        .btn-primary {
+            background: #f5a623;
+            color: #1f2a44;
+            padding: 12px 28px;
+            border-radius: 50px;
             font-weight: 700;
             text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 15px;
-            border: 2px solid transparent;
+            gap: 12px;
+            transition: 0.2s;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
         }
-
-        .btn-wa {
-            background-color: #25D366;
+        .btn-primary i {
+            font-size: 1.1rem;
+        }
+        .btn-primary:hover {
+            background: #e6951a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(245,166,35,0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #0b2b40;
+            color: #0b2b40;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-outline:hover {
+            background: #0b2b40;
             color: white;
         }
 
-        .btn-wa:hover {
-            background-color: #128C7E;
-            transform: translateY(-5px);
-            border-color: white;
+        /* section başlık */
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0b2b40;
+        }
+        .section-title p {
+            color: #4a627a;
+            max-width: 650px;
+            margin: 12px auto 0;
         }
 
-        .btn-call {
-            background-color: #ffaa00;
-            color: #0b2b3b;
-        }
-
-        .btn-call:hover {
-            background-color: #ffc34d;
-            transform: translateY(-5px);
-            border-color: #0b2b3b;
-        }
-
-        /* Ana Hizmetler */
+        /* hizmetler */
         .services {
-            padding: 4rem 2rem;
-            background: white;
-            text-align: center;
+            padding: 70px 0;
         }
-
-        .services h3 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #0b2b3b;
-            position: relative;
-            display: inline-block;
-        }
-
-        .services h3:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: #ffaa00;
-            margin: 10px auto 0;
-        }
-
-        .service-grid {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
         }
-
         .service-card {
-            background: #f9f9f9;
-            padding: 2rem 1rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            transition: 0.3s;
-            border-bottom: 4px solid #ffaa00;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 35px rgba(0,90,130,0.2);
-        }
-
-        .service-card i {
-            font-size: 3.5rem;
-            color: #1a4b63;
-            margin-bottom: 1rem;
-        }
-
-        .service-card h4 {
-            font-size: 1.6rem;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Neden Biz */
-        .why-us {
-            background: linear-gradient(145deg, #f0f7ff, #e6f0fa);
-            padding: 4rem 2rem;
-        }
-
-        .why-us h3 {
-            font-size: 2.5rem;
+            background: white;
+            border-radius: 28px;
+            padding: 30px 20px;
             text-align: center;
-            margin-bottom: 3rem;
-            color: #0b2b3b;
+            transition: 0.25s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+            border: 1px solid #e9eef3;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+            border-color: #f5a623;
+        }
+        .service-card i {
+            font-size: 2.8rem;
+            color: #f5a623;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.5rem;
         }
 
+        /* neden biz */
+        .why-us {
+            background: #ffffff;
+            padding: 70px 0;
+            background: linear-gradient(120deg, #ffffff, #f8fafd);
+        }
         .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 3rem;
-            max-width: 1100px;
-            margin: 0 auto;
+            gap: 35px;
+            margin-top: 30px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            background: white;
+            padding: 25px 15px;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .feature i {
+            font-size: 2.3rem;
+            background: #0b2b40;
+            color: white;
+            padding: 15px;
+            border-radius: 60px;
+            width: 70px;
+            height: 70px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
         }
 
-        .feature {
-            flex: 1 1 200px;
+        /* ilçe bölgeleri */
+        .regions {
+            background: #eef2f9;
+            padding: 70px 0;
+        }
+        .region-badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .region-badge {
+            background: white;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: 0.2s;
+            border: 1px solid #cddfe7;
+        }
+        .region-badge:hover {
+            background: #f5a623;
+            color: #1f2a44;
+            border-color: #f5a623;
+            transform: scale(0.98);
+        }
+
+        /* iletişim */
+        .contact {
+            padding: 70px 0;
+        }
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: white;
+            border-radius: 48px;
+            padding: 40px;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
+        }
+        .contact-info-box {
+            flex: 1;
+        }
+        .contact-info-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .contact-detail {
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 1.2rem;
+        }
+        .contact-detail i {
+            width: 50px;
+            height: 50px;
+            background: #0b2b40;
+            color: white;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .working-hours {
+            margin-top: 30px;
+            background: #f4f7fc;
+            padding: 15px 20px;
+            border-radius: 28px;
+        }
+
+        .map-placeholder {
+            flex: 1;
+            background: #cfdfed;
+            border-radius: 32px;
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c3e50;
+            font-weight: 500;
+            background-image: url('https://placehold.co/600x400/eef2f9/2c3e50?text=İstanbul+Geneli+Hizmet');
+            background-size: cover;
+            background-position: center;
+        }
+        .map-placeholder span {
+            background: rgba(0,0,0,0.6);
+            padding: 6px 15px;
+            border-radius: 40px;
+            color: white;
+        }
+
+        footer {
+            background: #0b2b40;
+            color: #ccdee8;
+            padding: 40px 0 20px;
             text-align: center;
         }
 
-        .feature .feat-icon {
-            background: #ffaa00;
-            width: 80px;
-            height: 80px;
+        /* SABİT BUTONLAR (whatsapp & ara) */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            z-index: 999;
+        }
+        .whatsapp-btn, .call-btn {
+            background-color: #25D366;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 2.5rem;
-            color: #0b2b3b;
-        }
-
-        /* İletişim Bölümü */
-        .contact-section {
-            background: #0b2b3b;
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-
-        .contact-section h3 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-section p {
-            font-size: 1.4rem;
-            margin-bottom: 2rem;
-        }
-
-        .big-contact-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .big-contact-buttons .btn {
-            font-size: 2rem;
-            padding: 1.5rem 4rem;
-        }
-
-        /* Footer */
-        .footer {
-            background: #04212e;
-            color: #ccc;
-            text-align: center;
-            padding: 2rem;
-            font-size: 1rem;
-        }
-
-        .footer a {
-            color: #ffaa00;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+            transition: 0.2s;
             text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+        .call-btn {
+            background-color: #f5a623;
+        }
+        .whatsapp-btn:hover, .call-btn:hover {
+            transform: scale(1.08);
         }
 
-        /* Mobil Uyum */
-        @media (max-width: 768px) {
-            .header {
+        /* Responsive */
+        @media (max-width: 800px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .header-content {
                 flex-direction: column;
-                text-align: center;
-                gap: 1rem;
             }
-            .contact-info {
-                text-align: center;
+            .contact-wrapper {
+                padding: 25px;
             }
-            .logo-text h1 {
-                font-size: 1.6rem;
+            .fixed-buttons {
+                right: 18px;
+                bottom: 20px;
             }
-            .hero h2 {
-                font-size: 2.2rem;
+            .whatsapp-btn, .call-btn {
+                width: 52px;
+                height: 52px;
+                font-size: 26px;
             }
-            .hero p {
-                font-size: 1.2rem;
-            }
-            .btn {
-                font-size: 1.4rem;
-                padding: 1rem 2rem;
-            }
-            .big-contact-buttons .btn {
-                font-size: 1.6rem;
-                padding: 1rem 2rem;
-            }
+        }
+        @media (max-width: 560px) {
             .hero-stats {
-                gap: 1rem;
+                flex-wrap: wrap;
             }
-            .stat-item {
-                font-size: 1rem;
-                padding: 0.5rem 1rem;
-            }
+        }
+        .tap-card-number {
+            font-weight: 800;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
-    <!-- HEADER: Logo ve telefon -->
-    <header class="header">
-        <div class="logo-container">
-            <!-- Logo: fontawesome ikonu + yazı (logo olarak kullan) -->
-            <div class="logo-icon">
-                <i class="fas fa-truck"></i> <!-- çekici simgesi, logo gibi -->
-            </div>
-            <div class="logo-text">
-                <h1>DİYARBAKIR OTO ÇEKİCİ</h1>
-                <p>7/24 Profesyonel Yol Yardım & Kurtarma</p>
-            </div>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">
+            <h1><i class="fas fa-wrench"></i> İstanbul Tesisatçı</h1>
+            <p>Profesyonel • Hızlı • 7/24 Tıkanıklık Açma</p>
         </div>
         <div class="contact-info">
-            <a href="tel:+905434739121" class="phone-big">
-                <i class="fas fa-phone-alt"></i> 0543 473 91 21
+            <a href="tel:05354803340" class="phone-header">
+                <i class="fas fa-phone-alt"></i> 0535 480 3340
             </a>
-            <span style="font-size:1rem; color:#ffd966;"><i class="far fa-clock"></i> 7/24 Hizmetinizdeyiz</span>
+            <span style="font-size:0.9rem;"><i class="fas fa-map-marker-alt"></i> İstanbul Geneli</span>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- HERO BÖLÜM - Büyük tanıtım -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Diyarbakır'ın En İyisi!</h2>
-            <p><i class="fas fa-check-circle" style="color:#ffaa00;"></i> Oto Çekici • Yol Yardım • Oto Kurtarma</p>
-            
-            <!-- Hemen ARA ve WHATSAP BUTONLARI (sitede iki yerde olacak) -->
-            <div class="cta-buttons">
-                <a href="https://wa.me/905434739121?text=Merhaba%2C%20oto%20çekici%20yardımına%20ihtiyacım%20var" class="btn btn-wa" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp Hattı
-                </a>
-                <a href="tel:+905434739121" class="btn btn-call">
-                    <i class="fas fa-phone"></i> Hemen Ara
-                </a>
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <div class="badge"><i class="fas fa-clock"></i> Acil 7/24 Hizmet</div>
+            <h1>Su tesisatçınız ve tıkanıklık uzmanınız</h1>
+            <p>İstanbul’un her ilçesinde profesyonel ekip, son teknoloji makinelerle tıkanıklık açma, gider temizleme ve su kaçağı tamiri.</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <a href="tel:05354803340" class="btn-primary"><i class="fas fa-phone"></i> Hemen Ara: 0535 480 3340</a>
+                <a href="https://wa.me/9053534803340?text=Merhaba%2C%20websitenizden%20ulaşıyorum%2C%20su%20tesisat%20ve%20tıkanıklık%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz</a>
             </div>
-
             <div class="hero-stats">
-                <div class="stat-item"><i class="fas fa-tachometer-alt"></i> 15 Dk'da Yanında</div>
-                <div class="stat-item"><i class="fas fa-clock"></i> 7/24 Açık</div>
-                <div class="stat-item"><i class="fas fa-tools"></i> Profesyonel Ekip</div>
+                <div><i class="fas fa-check-circle"></i> 15+ yıl deneyim</div>
+                <div><i class="fas fa-map-marked-alt"></i> 39 ilçe hizmet</div>
+                <div><i class="fas fa-smile"></i> Memnuniyet garantisi</div>
             </div>
         </div>
-    </section>
-
-    <!-- HİZMETLER -->
-    <section class="services">
-        <h3>Hizmetlerimiz</h3>
-        <div class="service-grid">
-            <div class="service-card">
-                <i class="fas fa-truck"></i>
-                <h4>Oto Çekici</h4>
-                <p>Her türlü araç çekme ve taşıma işlemi. Uygun fiyat, güvenli hizmet.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-wrench"></i>
-                <h4>Yol Yardım</h4>
-                <p>Akü takviye, lastik değişim, yakıt desteği, yerinde müdahale.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-dharmachakra"></i>
-                <h4>Oto Kurtarma</h4>
-                <p>Kaza, devrilme, kanalda kalan araçlar için profesyonel kurtarma.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-trailer"></i>
-                <h4>Vinç Hizmeti</h4>
-                <p>Ağır vasıta ve hafif ticari araçlar için özel vinç desteği.</p>
-            </div>
+        <div class="hero-image">
+            <img src="https://placehold.co/500x400/e9f0f5/1f2a44?text=Su+Tesisat%C3%A7%C4%B1s%C4%B1+%7C+T%C4%B1kan%C4%B1kl%C4%B1k+A%C3%A7ma" alt="Tesisatçı hizmet görseli">
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- NEDEN BİZ (Güvenilirlik) -->
-    <section class="why-us">
-        <h3>Neden Diyarbakır Oto Çekici?</h3>
+<!-- HİZMETLER -->
+<section class="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Uzmanlık Alanlarımız</h2>
+            <p>En zor tıkanıklıklardan su kaçağına kadar tüm tesisat ihtiyaçlarınız</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card"><i class="fas fa-toilet"></i><h3>Tuvalet Tıkanıklığı</h3><p>Klozet, rezervuar, gider açma. Özel makineler ile anında çözüm.</p></div>
+            <div class="service-card"><i class="fas fa-sink"></i><h3>Lavabo & Mutfak Tıkanıklığı</h3><p>Mutfak gideri, bulaşık atıkları, yağ birikintileri temizliği.</p></div>
+            <div class="service-card"><i class="fas fa-tint"></i><h3>Su Kaçağı Tamiri</h3><p>Duvarda, tesisatta su kaçağı tespiti ve onarım.</p></div>
+            <div class="service-card"><i class="fas fa-shower"></i><h3>Gider Açma & Rögar</h3><p>Kokulara neden olan tıkanıklıklar, yıkanabilir kameralı sistem.</p></div>
+            <div class="service-card"><i class="fas fa-faucet"></i><h3>Musluk & Batarya Tamiri</h3><p>Arızalı batarya değişimi, su kaçakları ve sızdırmazlık.</p></div>
+            <div class="service-card"><i class="fas fa-water"></i><h3>Kombi & Tesisat Bakımı</h3><p>Kombi alt bağlantı, petek temizliği ve genel tesisat.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- NEDEN BİZ -->
+<section class="why-us">
+    <div class="container">
+        <div class="section-title">
+            <h2>Neden Bizi Tercih Etmelisiniz?</h2>
+            <p>İstanbul'un her yerinde hızlı, güvenilir ve uygun fiyatlı tesisat hizmeti</p>
+        </div>
         <div class="features">
-            <div class="feature">
-                <div class="feat-icon"><i class="fas fa-stopwatch"></i></div>
-                <h4>15 Dakikada Yerinde</h4>
-                <p>Diyarbakır merkez ve ilçelerde en hızlı ekiple hizmet.</p>
+            <div class="feature"><i class="fas fa-bolt"></i><h3>Hızlı Müdahale</h3><p>Ortalama 30 dk'da adresinizdeyiz.</p></div>
+            <div class="feature"><i class="fas fa-microscope"></i><h3>Son Teknoloji</h3><p>Kamera görüntüleme, yüksek basınçlı jet makineler.</p></div>
+            <div class="feature"><i class="fas fa-hand-holding-heart"></i><h3>Garantili İşçilik</h3><p>Tüm işlemlerimiz 6 ay garantilidir.</p></div>
+            <div class="feature"><i class="fas fa-city"></i><h3>Tüm İstanbul</h3><p>Avrupa ve Anadolu Yakası’nda kesintisiz hizmet.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- HİZMET BÖLGELERİ (SEO) -->
+<section class="regions">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hizmet Verdiğimiz Bölgeler</h2>
+            <p>İstanbul'un tüm ilçelerinde 7/24 tıkanıklık açma ve su tesisatçısı</p>
+        </div>
+        <div class="region-badge-container">
+            <span class="region-badge">Beşiktaş</span> <span class="region-badge">Şişli</span> <span class="region-badge">Beyoğlu</span> <span class="region-badge">Fatih</span>
+            <span class="region-badge">Kadıköy</span> <span class="region-badge">Üsküdar</span> <span class="region-badge">Maltepe</span> <span class="region-badge">Kartal</span>
+            <span class="region-badge">Pendik</span> <span class="region-badge">Tuzla</span> <span class="region-badge">Bakırköy</span> <span class="region-badge">Bahçelievler</span>
+            <span class="region-badge">Bağcılar</span> <span class="region-badge">Esenler</span> <span class="region-badge">Gaziosmanpaşa</span> <span class="region-badge">Sultangazi</span>
+            <span class="region-badge">Arnavutköy</span> <span class="region-badge">Beylikdüzü</span> <span class="region-badge">Esenyurt</span> <span class="region-badge">Avcılar</span>
+            <span class="region-badge">Büyükçekmece</span> <span class="region-badge">Çekmeköy</span> <span class="region-badge">Sancaktepe</span> <span class="region-badge">Sarıyer</span>
+            <span class="region-badge">Eyüpsultan</span> <span class="region-badge">Kağıthane</span> <span class="region-badge">Bayrampaşa</span> <span class="region-badge">Zeytinburnu</span>
+            <span class="region-badge">Ataşehir</span> <span class="region-badge">Ümraniye</span> <span class="region-badge">Silivri</span> <span class="region-badge">Çatalca</span>
+            <span class="region-badge">Beykoz</span> <span class="region-badge">Adalar</span> <span class="region-badge">Sultanbeyli</span>
+        </div>
+        <p style="text-align:center; margin-top:30px; font-weight:500;"><i class="fas fa-check-circle" style="color:#f5a623;"></i> İstanbul'un her noktasına profesyonel ekip ile servis</p>
+    </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Bizimle İletişime Geçin</h2>
+            <p>Acil tıkanıklık veya tesisat sorunlarınız için anında harekete geçiyoruz.</p>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info-box">
+                <h3><i class="fas fa-phone-alt"></i> 7/24 Ulaşın</h3>
+                <div class="contact-detail">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div><strong>Telefon</strong><br><span style="font-size:1.5rem; font-weight:700;">0535 480 3340</span></div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fab fa-whatsapp"></i>
+                    <div><strong>WhatsApp Hattı</strong><br>Hızlı destek ve randevu</div>
+                </div>
+                <div class="working-hours">
+                    <i class="fas fa-clock"></i> Çalışma Saatleri: <strong>7/24 Kesintisiz Hizmet</strong><br>
+                    Resmi tatil ve hafta sonu fark etmeksizin acil tesisatçı.
+                </div>
+                <div style="margin-top:25px">
+                    <a href="tel:05354803340" class="btn-primary" style="margin-right:12px;"><i class="fas fa-phone"></i> Hemen Ara</a>
+                    <a href="https://wa.me/9053534803340?text=Merhaba%2C%20websitenizden%20ulaşıyorum%2C%20acil%20tesisat%20yardımına%20ihtiyacım%20var." target="_blank" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feat-icon"><i class="fas fa-phone-volume"></i></div>
-                <h4>7/24 Ulaşılabilir</h4>
-                <p>Günün her saati tek bir telefonla yanınızdayız.</p>
-            </div>
-            <div class="feature">
-                <div class="feat-icon"><i class="fas fa-medal"></i></div>
-                <h4>Uzman Ekip</h4>
-                <p>Yılların deneyimi, modern çekici ve kurtarma araçları.</p>
-            </div>
-            <div class="feature">
-                <div class="feat-icon"><i class="fas fa-map-marker-alt"></i></div>
-                <h4>Diyarbakır'ın Her Yeri</h4>
-                <p>Kayapınar, Bağlar, Sur, Yenişehir ve tüm ilçeler.</p>
+            <div class="map-placeholder">
+                <span><i class="fas fa-map-pin"></i> İstanbul Geneli Hizmet Bölgesi</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- TEKRAR BUTONLU İLETİŞİM (Whatsapp ve Arama butonları yine burada) -->
-    <section class="contact-section">
-        <h3>Yolda Kaldınız mı? Hemen Ulaşın!</h3>
-        <p><i class="fas fa-phone-alt"></i> 7/24 Açık Hattımız: <strong>0543 473 91 21</strong></p>
-        <div class="big-contact-buttons">
-            <a href="https://wa.me/905434739121?text=Merhaba%2C%20çekici%20çağırmak%20istiyorum" class="btn btn-wa" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp Yaz
-            </a>
-            <a href="tel:+905434739121" class="btn btn-call">
-                <i class="fas fa-phone"></i> Hemen Ara
-            </a>
-        </div>
-        <p style="margin-top:2rem; font-size:1.2rem;"><i class="fas fa-check-circle" style="color:#ffaa00;"></i> Profesyonel oto kurtarma ve çekici hizmeti için tek numara.</p>
-    </section>
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p><i class="fas fa-wrench"></i> İstanbul Su Tesisatçısı & Tıkanıklık Açma Uzmanı | Profesyonel, hızlı ve garantili hizmet</p>
+        <p><strong>Telefon:</strong> 0535 480 3340 | <strong>WhatsApp:</strong> 0535 480 3340 | İstanbul Avrupa & Anadolu Yakası</p>
+        <p style="margin-top: 20px; font-size: 0.8rem;">© 2025 Tüm hakları saklıdır. SEO uyumlu | Acil tesisatçı 7/24</p>
+    </div>
+</footer>
 
-    <!-- Firma Bilgileri & Footer -->
-    <footer class="footer">
-        <p><strong>Diyarbakır Oto Çekici 7/24</strong> | © 2025 Tüm hakları saklıdır.</p>
-        <p><i class="fas fa-map-pin"></i> Merkez: Diyarbakır / Türkiye (7/24 servis)</p>
-        <p>Telefon: <a href="tel:+905434739121">0543 473 91 21</a> | WhatsApp: <a href="https://wa.me/905434739121" target="_blank">0543 473 91 21</a></p>
-        <p>Site: <a href="https://www.diyarbakircekici724.com" target="_blank">www.diyarbakircekici724.com</a></p>
-        <p style="margin-top:10px; font-size:0.9rem;"><i class="fas fa-truck"></i> Diyarbakır'ın en iyi oto çekici firması - Yol yardım, oto kurtarma, vinç</p>
-    </footer>
+<!-- SABİT WHATSAPP & ARA BUTONLARI -->
+<div class="fixed-buttons">
+    <a href="https://wa.me/9053534803340?text=Merhaba%2C%20websitenizden%20ulaşıyorum%2C%20tıkanıklık%20ve%20su%20tesisat%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:05354803340" class="call-btn" aria-label="Telefonla Ara">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
 
-    <!-- SEO İÇİN EK YAPISAL VERİ (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "AutoRepair",
-        "name": "Diyarbakır Oto Çekici 7/24",
-        "alternateName": "Diyarbakır Oto Kurtarma ve Yol Yardım",
-        "url": "https://www.diyarbakircekici724.com",
-        "logo": "https://www.diyarbakircekici724.com/logo.png",
-        "image": "https://www.diyarbakircekici724.com/logo.png",
-        "description": "Diyarbakır oto çekici, yol yardım ve oto kurtarma hizmeti. 7/24 profesyonel ekip, en hızlı hizmet.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Diyarbakır",
-            "addressCountry": "TR"
-        },
-        "telephone": "+905434739121",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "sameAs": [
-            "https://www.instagram.com/diyarbakircekici724",
-            "https://www.facebook.com/diyarbakircekici724"
-        ],
-        "areaServed": {
-            "@type": "City",
-            "name": "Diyarbakır"
-        },
-        "priceRange": "₺₺"
-    }
-    </script>
-
-    <!-- Küçük bir script: butonların düzgün çalışması için (opsiyonel) -->
-    <script>
-        // Butonlara tıklanma istatistiği veya ileri seviye izlemek için boş bir alan. Şimdilik gerek yok.
-        console.log('Diyarbakır Oto Çekici 7/24 sitesi yüklendi.');
-    </script>
+<!-- Ekstra schema markup - LocalBusiness için (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "İstanbul Tesisatçı - Tıkanıklık Açma ve Su Tesisatı",
+  "image": "https://www.istanbultesisatci.com/logo.png",
+  "telephone": "+9053534803340",
+  "email": "info@istanbultesisatci.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "İstanbul",
+    "addressCountry": "TR"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "İstanbul"
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "priceRange": "₺₺",
+  "sameAs": [
+    "https://wa.me/9053534803340"
+  ]
+}
+</script>
 </body>
 </html>
