@@ -9,9 +9,9 @@
     <meta name="author" content="İstanbul Tesisat Uzmanı">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.istanbultesisatci.com">
-    <!-- Font Awesome 6 (ücretsiz ikonlar) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts - modern sans -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -28,7 +28,6 @@
             scroll-behavior: smooth;
         }
 
-        /* container */
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -80,6 +79,7 @@
             gap: 8px;
             color: #1f2a44;
             transition: 0.2s;
+            text-decoration: none;
         }
         .phone-header i {
             font-size: 1.2rem;
@@ -147,8 +147,10 @@
             max-width: 100%;
             border-radius: 32px;
             box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
-        /* butonlar */
         .btn-primary {
             background: #f5a623;
             color: #1f2a44;
@@ -190,7 +192,6 @@
             color: white;
         }
 
-        /* section başlık */
         .section-title {
             text-align: center;
             margin-bottom: 48px;
@@ -206,7 +207,6 @@
             margin: 12px auto 0;
         }
 
-        /* hizmetler */
         .services {
             padding: 70px 0;
         }
@@ -239,7 +239,6 @@
             font-size: 1.5rem;
         }
 
-        /* neden biz */
         .why-us {
             background: #ffffff;
             padding: 70px 0;
@@ -275,7 +274,6 @@
             margin-bottom: 16px;
         }
 
-        /* ilçe bölgeleri */
         .regions {
             background: #eef2f9;
             padding: 70px 0;
@@ -303,7 +301,6 @@
             transform: scale(0.98);
         }
 
-        /* iletişim */
         .contact {
             padding: 70px 0;
         }
@@ -348,25 +345,48 @@
             border-radius: 28px;
         }
 
-        .map-placeholder {
+        /* İstanbul temalı harita/ikon bölümü */
+        .istanbul-theme {
             flex: 1;
-            background: #cfdfed;
+            background: linear-gradient(135deg, #d4e0ec, #b9cadb);
             border-radius: 32px;
             min-height: 280px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #2c3e50;
-            font-weight: 500;
-            background-image: url('https://placehold.co/600x400/eef2f9/2c3e50?text=İstanbul+Geneli+Hizmet');
+            flex-direction: column;
+            color: #1f2a44;
+            font-weight: 600;
+            text-align: center;
+            padding: 20px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/77/Levent_Istanbul_%28cropped%29.jpg');
             background-size: cover;
             background-position: center;
+            position: relative;
+            overflow: hidden;
         }
-        .map-placeholder span {
-            background: rgba(0,0,0,0.6);
-            padding: 6px 15px;
-            border-radius: 40px;
-            color: white;
+        .istanbul-theme::before {
+            content: "";
+            background: rgba(11,43,64,0.65);
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+        .istanbul-theme span {
+            position: relative;
+            z-index: 2;
+            background: rgba(255,255,255,0.9);
+            padding: 12px 24px;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            backdrop-filter: blur(2px);
+            color: #0b2b40;
+        }
+        .istanbul-theme span i {
+            margin-right: 10px;
         }
 
         footer {
@@ -376,7 +396,6 @@
             text-align: center;
         }
 
-        /* SABİT BUTONLAR (whatsapp & ara) */
         .fixed-buttons {
             position: fixed;
             bottom: 30px;
@@ -407,7 +426,6 @@
             transform: scale(1.08);
         }
 
-        /* Responsive */
         @media (max-width: 800px) {
             .hero-text h1 {
                 font-size: 2rem;
@@ -433,15 +451,10 @@
                 flex-wrap: wrap;
             }
         }
-        .tap-card-number {
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
     </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
     <div class="container header-content">
         <div class="logo">
@@ -457,7 +470,7 @@
     </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO BÖLÜMÜ - Kapak fotoğrafı buraya eklendi -->
 <section class="hero">
     <div class="container hero-grid">
         <div class="hero-text">
@@ -475,7 +488,8 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://placehold.co/500x400/e9f0f5/1f2a44?text=Su+Tesisat%C3%A7%C4%B1s%C4%B1+%7C+T%C4%B1kan%C4%B1kl%C4%B1k+A%C3%A7ma" alt="Tesisatçı hizmet görseli">
+            <!-- Kapak fotoğrafı (hero ana görsel) -->
+            <img src="https://www.tikanikgideracmauzmani.com/githup.keep/Ads%C4%B1z%20tasar%C4%B1m%20-%202026-06-09T184509.413.png" alt="İstanbul Tesisatçı Kapak Görseli" onerror="this.src='https://placehold.co/600x400/e9f0f5/1f2a44?text=Tesisat+Hizmetleri'">
         </div>
     </div>
 </section>
@@ -514,7 +528,7 @@
     </div>
 </section>
 
-<!-- HİZMET BÖLGELERİ (SEO) -->
+<!-- HİZMET BÖLGELERİ -->
 <section class="regions">
     <div class="container">
         <div class="section-title">
@@ -536,7 +550,7 @@
     </div>
 </section>
 
-<!-- İLETİŞİM -->
+<!-- İLETİŞİM (İstanbul temalı beyaz kare fotoğraf ve diğer iki görsel burada) -->
 <section class="contact">
     <div class="container">
         <div class="section-title">
@@ -558,19 +572,25 @@
                     <i class="fas fa-clock"></i> Çalışma Saatleri: <strong>7/24 Kesintisiz Hizmet</strong><br>
                     Resmi tatil ve hafta sonu fark etmeksizin acil tesisatçı.
                 </div>
-                <div style="margin-top:25px">
-                    <a href="tel:05354803340" class="btn-primary" style="margin-right:12px;"><i class="fas fa-phone"></i> Hemen Ara</a>
+                <div style="margin-top:25px; display: flex; gap:12px; flex-wrap:wrap;">
+                    <a href="tel:05354803340" class="btn-primary" style="margin-right:0;"><i class="fas fa-phone"></i> Hemen Ara</a>
                     <a href="https://wa.me/9053534803340?text=Merhaba%2C%20websitenizden%20ulaşıyorum%2C%20acil%20tesisat%20yardımına%20ihtiyacım%20var." target="_blank" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
-            <div class="map-placeholder">
-                <span><i class="fas fa-map-pin"></i> İstanbul Geneli Hizmet Bölgesi</span>
+            <div class="istanbul-theme">
+                <span><i class="fas fa-city"></i> İstanbul'un Kalbindeyiz<br> Avrupa & Anadolu Yakası</span>
+                <!-- İstanbul teması için arkada İstanbul fotoğrafı mevcut, ayrıca aşağıya görselleri grid şekilde koyabiliriz -->
             </div>
         </div>
+        <!-- İkinci ve üçüncü görsellerin gösterimi için yeni bir bölüm (Tıkanıklık açma ve hizmet görselleri) -->
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 48px;">
+            <img src="https://www.tikanikgideracmauzmani.com/githup.keep/Ads%C4%B1z%20tasar%C4%B1m%20-%202026-06-09T184923.726.png" alt="Tıkanıklık Açma Hizmeti" style="max-width: 300px; border-radius: 28px; box-shadow: 0 8px 18px rgba(0,0,0,0.1); width:100%;" onerror="this.src='https://placehold.co/300x200/eef2f9/1f2a44?text=Tıkanıklık+Açma'">
+            <img src="https://www.tikanikgideracmauzmani.com/githup.keep/Ads%C4%B1z%20tasar%C4%B1m%20-%202026-06-09T184858.903.png" alt="Su Tesisatçısı Görseli" style="max-width: 300px; border-radius: 28px; box-shadow: 0 8px 18px rgba(0,0,0,0.1); width:100%;" onerror="this.src='https://placehold.co/300x200/eef2f9/1f2a44?text=Profesyonel+Tesisat'">
+        </div>
+        <p style="text-align:center; margin-top: 30px; font-size:0.9rem;"><i class="fas fa-camera"></i> Tıkanıklık açma ve su tesisatı uzman ekibimiz</p>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <div class="container">
         <p><i class="fas fa-wrench"></i> İstanbul Su Tesisatçısı & Tıkanıklık Açma Uzmanı | Profesyonel, hızlı ve garantili hizmet</p>
@@ -579,7 +599,6 @@
     </div>
 </footer>
 
-<!-- SABİT WHATSAPP & ARA BUTONLARI -->
 <div class="fixed-buttons">
     <a href="https://wa.me/9053534803340?text=Merhaba%2C%20websitenizden%20ulaşıyorum%2C%20tıkanıklık%20ve%20su%20tesisat%20hizmeti%20hakkında%20bilgi%20almak%20istiyorum." class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
@@ -589,15 +608,12 @@
     </a>
 </div>
 
-<!-- Ekstra schema markup - LocalBusiness için (SEO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Plumber",
   "name": "İstanbul Tesisatçı - Tıkanıklık Açma ve Su Tesisatı",
-  "image": "https://www.istanbultesisatci.com/logo.png",
   "telephone": "+9053534803340",
-  "email": "info@istanbultesisatci.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "İstanbul",
@@ -607,11 +623,7 @@
     "@type": "City",
     "name": "İstanbul"
   },
-  "openingHours": "Mo-Su 00:00-23:59",
-  "priceRange": "₺₺",
-  "sameAs": [
-    "https://wa.me/9053534803340"
-  ]
+  "openingHours": "Mo-Su 00:00-23:59"
 }
 </script>
 </body>
